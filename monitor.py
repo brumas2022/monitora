@@ -8,6 +8,7 @@ st.write("---")
 poco = st.selectbox("Escolha o poço", ("P41","P42","P64","P03","P59","P58","P04","P34","P54","P45","P32","P55","P51","P30","P01","P07","P23","P61"))
     
 if poco == "P41":
+        st.markdwon("O nivel do P41 é 6,96m")
         id = 68
 elif poco == "/P42":
         id = 71

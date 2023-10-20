@@ -44,26 +44,26 @@ elif poco == "/P23":
 elif poco == "/P61":
         id = 108
 
-    try:
-        connection = psycopg2.connect(
-            host = '192.168.0.169',
-            user = 'postgres',
-            password = 'cetis',
-            database = 'dbsitec',
-            port = '5432'
-        )
-        print("conexao exitosa")
-        cursor = connection.cursor()
+try:
+    connection = psycopg2.connect(
+        host = '192.168.0.169',
+        user = 'postgres',
+        password = 'cetis',
+        database = 'dbsitec',
+        port = '5432'
+     )
+    print("conexao exitosa")
+    cursor = connection.cursor()
         
-        comando = f"SELECT * FROM saneamento.registro_grandezas WHERE id_amb = {id} and cd_classe = 10  ORDER BY id DESC LIMIT 2"
+    comando = f"SELECT * FROM saneamento.registro_grandezas WHERE id_amb = {id} and cd_classe = 10  ORDER BY id DESC LIMIT 2"
 
-        cursor.execute(comando)
-        resultado = cursor.fetchone()
-        st.write(resultado)
+    cursor.execute(comando)
+    resultado = cursor.fetchone()
+    st.write(resultado)
 
-    except Exception as ex:
+except Exception as ex:
 
-        print(ex)
+    print(ex)
 
 
 

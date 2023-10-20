@@ -1,45 +1,47 @@
 import streamlit as st
 import psycopg2
 
+st.header("Monitor de nivel de poços e reservatorios do SANEAR")
+st.write("---")
+
+
     poco = st.selectbox("Escolha o poço", ("P41","P42","P64","P03","P59","P58","P04","P34","P54","P45","P32","P55","P51","P30","P01","P07","P23","P61"))
     
     if poco == "P41":
         id = 68
-    elif mensagem.text == "/P42":
-        print(mensagem.text)
+    elif poco == "/P42":
         id = 71
-    elif mensagem.text == "/P64":
-        print(mensagem.text)
+    elif poco == "/P64":
         id = 1
-    elif mensagem.text == "/P03":
+    elif poco == "/P03":
         id = 2
-    elif mensagem.text == "/P59":
+    elif poco == "/P59":
         id = 50
-    elif mensagem.text == "/P58":
+    elif poco == "/P58":
         id = 52
-    elif mensagem.text == "/P04":
+    elif poco == "/P04":
         id = 67
-    elif mensagem.text == "/P34":
+    elif poco == "/P34":
         id = 69
-    elif mensagem.text == "/P54":
+    elif poco == "/P54":
         id = 70
-    elif mensagem.text == "/P45":
+    elif poco == "/P45":
         id = 72
-    elif mensagem.text == "/P32":
+    elif poco == "/P32":
         id = 75
-    elif mensagem.text == "/P55":
+    elif poco == "/P55":
         id = 80
-    elif mensagem.text == "/P51":
+    elif poco == "/P51":
         id = 100
-    elif mensagem.text == "/P30":
+    elif poco == "/P30":
         id = 101
-    elif mensagem.text == "/P01":
+    elif poco == "/P01":
         id = 102
-    elif mensagem.text == "/P07":
+    elif poco == "/P07":
         id = 103
-    elif mensagem.text == "/P23":
+    elif poco == "/P23":
         id = 104
-    elif mensagem.text == "/P61":
+    elif poco == "/P61":
         id = 108
 
     try:

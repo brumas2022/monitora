@@ -1,7 +1,7 @@
 import streamlit as st
 import psycopg2
 
-    poco = st.selectbox("Escolha o poço", (""P41","P42","P64","P03","P59","P58","P04","P34","P54","P45","P32","P55","P51","P30","P01","P07","P23","P61"))
+    poco = st.selectbox("Escolha o poço", ("P41","P42","P64","P03","P59","P58","P04","P34","P54","P45","P32","P55","P51","P30","P01","P07","P23","P61"))
     
     if poco == "P41":
         id = 68

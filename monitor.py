@@ -1,5 +1,5 @@
 import streamlit as st
-##import psycopg2-binary
+import psycopg2
 
 st.header("Monitor de nivel de poços e reservatorios do SANEAR")
 st.write("---")

@@ -67,7 +67,7 @@ def consulta():
 
         st.write(ex)
 
-st.markdown("**Este é o id do poço escolhido**")
+st.markdown("**Este é o id do poço escolhido : {id}**")
 
 
 

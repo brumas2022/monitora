@@ -53,7 +53,7 @@ try:
         database = 'dbsitec',
         port = '5432'
      )
-    print("conexao exitosa")
+    st.write("conexao exitosa")
     cursor = connection.cursor()
         
     comando = f"SELECT * FROM saneamento.registro_grandezas WHERE id_amb = {id} and cd_classe = 10  ORDER BY id DESC LIMIT 2"
@@ -64,7 +64,7 @@ try:
 
 except Exception as ex:
 
-    print(ex)
+    st.write(ex)
 
 
 

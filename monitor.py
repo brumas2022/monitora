@@ -45,7 +45,7 @@ elif poco == "P23":
 elif poco == "P61":
         id = 108
 
-def consulta:
+def consulta():
     try:
         connection = psycopg2.connect(
             host = '192.168.0.169',

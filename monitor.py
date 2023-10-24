@@ -67,7 +67,7 @@ def consulta():
 
         st.write(ex)
 
-st.write("Este é o id do poço escolhido : "+id)
+st.write("Este é o id do poço escolhido : ")
 
 
 

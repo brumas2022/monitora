@@ -3,6 +3,7 @@ import psycopg2
 import telebot
 
 bot = telebot.TeleBot(CHAVE_API)  
+
 ##a chave que estava disponivel no loja1 e no monitora_sanear
 
 

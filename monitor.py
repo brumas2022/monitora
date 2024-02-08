@@ -2,7 +2,8 @@ import streamlit as st
 import psycopg2
 import telebot
 
-bot = telebot.TeleBot(CHAVE_API)  ##a chave que estava disponivel no loja1 e no monitora_sanear
+bot = telebot.TeleBot(CHAVE_API)  
+##a chave que estava disponivel no loja1 e no monitora_sanear
 
 
 st.header("Monitor de nivel de poços e reservatorios do SANEAR")

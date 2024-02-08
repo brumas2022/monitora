@@ -19,7 +19,8 @@ if poco == "P41":
         id = 68
 elif poco == "P42":
         id = 71
-        nome = st.text_input("entre com uma mensagem")
+        vazio = st.empty()
+        nome = vazio.text_input("entre com uma mensagem")
         bot.send_message(820304760, nome)
 elif poco == "P64":
         id = 1
@@ -76,7 +77,7 @@ def consulta():
 
         st.write(ex)
 
-st.write("Este é o id do poço escolhido : ")
+st.markdown("Esta é a mensagem enviada: "+nome)
 
 @bot.message_handler(commands=["P42"])
 def P42(mensagem):

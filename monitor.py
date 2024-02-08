@@ -2,6 +2,7 @@ import streamlit as st
 import psycopg2
 import telebot
 
+CHAVE_API="6253633084:AAEDJfuYUyNWydjAJR4dsZUh3vZGmLfSUps"
 bot = telebot.TeleBot(CHAVE_API)  
 
 ##a chave que estava disponivel no loja1 e no monitora_sanear

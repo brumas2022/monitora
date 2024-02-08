@@ -77,6 +77,26 @@ def consulta():
 
 st.write("Este é o id do poço escolhido : ")
 
+@bot.message_handler(commands=["P42"])
+def P42(mensagem):
+    bot.send_message(mensagem.chat.id, "Aguarde enquanto acesso a informação....")
+def verificar(mensagem):
+    return True
+
+@bot.message_handler(func=verificar)
+
+def responder(mensagem):
+    texto = """
+    Reservatorios
+    -----------------------------------------
+    /P03 - Jardim Atlantico I
+    /P41 - Globo Recreio I
+    /P42 - Globo Recreio II"""
+    bot.reply_to(mensagem, texto)
+    
+
+bot.infinity_polling(timeout=100)
+
 
 
 

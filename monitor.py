@@ -1,5 +1,6 @@
 import streamlit as st
 import psycopg2
+import telebot
 
 st.header("Monitor de nivel de poços e reservatorios do SANEAR")
 st.write("---")

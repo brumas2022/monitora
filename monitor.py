@@ -20,7 +20,7 @@ if poco == "P41":
 elif poco == "P42":
         id = 71
         
-        nome = st.text_input("entre com uma mensagem", value="")
+        nome = st.text_input("O que você pretende enviar?", value="")
         
         bot.send_message(820304760, nome)
 elif poco == "P64":
